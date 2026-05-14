@@ -10,8 +10,6 @@ RUN apt-get update && \
     xz-utils \
     && rm -rf /var/lib/apt/lists/*
 
-RUN install gh
-
 RUN curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
 
 ENV PATH="/root/.local/bin:/usr/local/bin:/root/.hermes/node/bin:${PATH}"

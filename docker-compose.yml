@@ -13,8 +13,6 @@ services:
       - hermes-data:/root/.hermes
       - ./hermes_memory:/root/.hermes/memory
       - ./work:/opt/hermes/work
-    ports:
-      - "9119:9119"
     stdin_open: true
     tty: true
     command: hermes gateway run

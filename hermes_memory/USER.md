@@ -1,1 +1,0 @@
-Always add/update documentation for projects. General documentation goes in README.md — only document what's generally useful, keep it focused not exhaustive. Specifications go in project-root specifications.md (processed into readable form).

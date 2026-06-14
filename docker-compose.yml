@@ -10,12 +10,8 @@ services:
       - HERMES_WEB_HOST=0.0.0.0
       - HERMES_WEB_PORT=9119
     volumes:
-      - hermes-data:/root/.hermes
-      - ./hermes_memory:/root/.hermes/memory
-      - ./work:/opt/hermes/work
+      - ./data:/root/.hermes
+      - ./projects:/root/projects
     stdin_open: true
     tty: true
     command: hermes gateway run
-
-volumes:
-  hermes-data:
